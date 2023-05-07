@@ -52,8 +52,8 @@
 
 
 // 2. Import default variables and available mixins.
-@import "src/scss/variables.scss";
-@import "src/scss/mixins.scss";
+@import "../../src/scss/variables.scss";
+@import "../../src/scss/mixins.scss";
 
 
 // // 3. Your custom mixin overwrites.
@@ -63,4 +63,4 @@
 
 
 // 4. Import UIkit
-@import "src/scss/uikit.scss";
+@import "../../src/scss/uikit.scss";
