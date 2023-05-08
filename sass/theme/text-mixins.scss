@@ -1,0 +1,14 @@
+@mixin hook-text-misc() {
+  .uk-text-weight-200 { font-weight: 200; }
+  .uk-text-weight-300 { font-weight: 300; }
+  .uk-text-weight-400 { font-weight: 400; }
+  .uk-text-weight-500 { font-weight: 500; }
+  .uk-text-weight-600 { font-weight: 600; }
+  .uk-text-weight-700 { font-weight: 700; }
+  .uk-text-weight-800 { font-weight: 800; }
+
+  .uk-text-xsmall {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}
