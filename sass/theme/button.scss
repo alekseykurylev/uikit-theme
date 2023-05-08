@@ -22,9 +22,9 @@ $button-primary-active-color: var(--color-white);
 
 $button-secondary-background: var(--color-mine-shaft-900);
 $button-secondary-color: var(--color-white);
-$button-secondary-hover-background: darken(#212121, 5%) !default;
+$button-secondary-hover-background: darken(#212121, 5%);
 $button-secondary-hover-color: var(--color-white);
-$button-secondary-active-background: darken(#212121, 10%) !default;
+$button-secondary-active-background: darken(#212121, 10%);
 $button-secondary-active-color: var(--color-white);
 
 $button-danger-background: var(--color-alarm-500);
