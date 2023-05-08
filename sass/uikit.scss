@@ -1,0 +1,26 @@
+// 1. Your custom variables and variable overwrites.
+@import "theme/variables.scss";
+@import "theme/base.scss";
+@import "theme/alert.scss";
+@import "theme/icon.scss";
+@import "theme/section.scss";
+@import "theme/button.scss";
+@import "theme/text.scss";
+@import "theme/breadcrumb.scss";
+
+
+// 2. Import default variables and available mixins.
+@import "../../src/scss/variables.scss";
+@import "../../src/scss/mixins.scss";
+
+
+// // 3. Your custom mixin overwrites.
+@import "theme/alert-mixins.scss";
+@import "theme/button-mixins.scss";
+@import "theme/text-mixins.scss";
+@import "theme/heading-mixins.scss";
+@import "theme/breadcrumb-mixins.scss";
+
+
+// 4. Import UIkit
+@import "../../src/scss/uikit.scss";
