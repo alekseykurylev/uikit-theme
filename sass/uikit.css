@@ -2958,12 +2958,12 @@ select.uk-form-width-xsmall {
  * Adopts `uk-icon`
  */
 .uk-close {
-  color: var(--color-bali-hai-300);
+  color: var(--color-cerulean-500);
 }
 
 /* Hover */
 .uk-close:hover {
-  color: var(--color-mine-shaft-900);
+  color: var(--color-cerulean-link-hover);
 }
 
 /* ========================================================================
