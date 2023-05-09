@@ -75,3 +75,33 @@
         border: none;
     }
 }
+
+.header-hero {
+    padding: 24px 0;
+}
+
+.header-hero__nav > li > a {
+    display: flex;
+    align-items: center;
+}
+
+.header-hero__nav > li > a:hover {
+    text-decoration: none;
+}
+
+.header-hero__nav > li > a > div {
+    color: var(--color-bali-hai-300);
+}
+
+.header-hero__nav > li > a:hover > div {
+    color: var(--color-cerulean-link-hover);
+}
+
+.header-hero__nav > li > a svg {
+    width: 16px;
+    height: 16px;
+}
+
+.header-hero__nav > li > a .uk-badge {
+    padding: 0 4px;
+}
