@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="variables.css" />
+  <link rel="stylesheet" href="sass/uikit.css" />
+  <link rel="stylesheet" href="header.css" />
+
+  <script src="../dist/js/uikit.min.js"></script>
+  <script src="../dist/js/uikit-icons-theme.js"></script>
+  
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="uk-hidden@s">
+      mobile menu
+    </div>
+    <div class="header-topbar uk-grid-collapse uk-visible@s" uk-grid>
+      <div class="header-topbar__left uk-width-expand">
+        <ul class="header-topbar__list uk-grid-collapse uk-child-width-auto uk-flex-nowrap" uk-grid>
+          <li class="uk-flex-none uk-hidden@l">
+            <div>
+              <div class="header-topbar__time-all uk-text-small">
+                <div><span uk-icon="server-time"></span> 15.01.2022 12:42:45 (MSK +4)</div>
+                <div><span uk-icon="server-time"></span> 15.01.2022 12:42:45 45 (MSK +4)</div>
+              </div>
+            </div>
+          </li>
+          <li class="uk-flex-none uk-visible@l">
+            <div>
+              <span uk-icon="server-time"></span>
+              <div class="uk-margin-12-left">
+                <div class="uk-text-xsmall">Время на сервере</div>
+                <div class="uk-text-small">15.01.2022 12:42:45 (MSK +4)</div>
+              </div>
+            </div>
+          </li>
+          <li class="uk-flex-none uk-visible@l">
+            <div>
+              <span uk-icon="clock"></span>
+              <div class="uk-margin-12-left">
+                <div class="uk-text-xsmall">Местное время</div>
+                <div class="uk-text-small">15.01.2022 12:42:45 (MSK +4)</div>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-expand uk-visible@m">
+            <div>
+              <span uk-icon="user"></span>
+              <div class="uk-margin-12-left uk-width-expand">
+                <div class="uk-text-xsmall">
+                  <div class="uk-text-truncate">Заказчик: <a class="uk-text-bold" href="#">ООО «Тестовая организация длинное название»</a></div>
+                </div>
+                <div class="uk-text-small uk-text-truncate">Сазанов Антон Михайлович</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="header-topbar__right uk-width-auto">
+        <ul class="header-topbar__list uk-grid-collapse uk-child-width-auto uk-flex-nowrap" uk-grid>
+          <li>
+            <a href="#"><span uk-icon="telegram"></span></a>
+          </li>
+          <li>
+            <a href="#">
+              <span uk-icon="bell"></span>
+              <span class="uk-badge uk-badge-danger uk-margin-2-left">25</span>
+            </a>
+          </li>
+          <li>
+            <a class="header-topbar__user" href="#">
+              <div class="uk-h3 uk-visible@m">Мой кабинет</div>
+              <span uk-icon="down-arrow-circle"></span>
+            </a>
+          </li>
+          <!-- <li>
+            <div>
+              <button class="uk-button uk-button-primary">Войти</button>
+            </div>
+          </li> -->
+          <li>
+            <a class="header-topbar__logout" href="#"><span uk-icon="logout"></span></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+  
+</body>
+</html>
