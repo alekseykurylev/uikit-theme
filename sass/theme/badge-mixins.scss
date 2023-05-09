@@ -10,4 +10,9 @@
   .uk-badge-danger {
     background-color: var(--color-alarm-500);
   }
+
+  .uk-badge-muted {
+    background-color: var(--color-mystic-300-a-30);
+    color: var(--color-mine-shaft-900) !important;
+  }
 }
