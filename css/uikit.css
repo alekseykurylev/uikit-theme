@@ -2496,8 +2496,8 @@ select.uk-form-width-xsmall {
 /* Phone landscape and bigger */
 @media (min-width: 640px) {
   .uk-container {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 /* Tablet landscape and bigger */
@@ -2561,11 +2561,11 @@ select.uk-form-width-xsmall {
 @media (min-width: 640px) {
   .uk-container-expand-left.uk-container-xsmall,
   .uk-container-expand-right.uk-container-xsmall {
-    max-width: calc(50% + (750px / 2) - 24px);
+    max-width: calc(50% + (750px / 2) - 16px);
   }
   .uk-container-expand-left.uk-container-small,
   .uk-container-expand-right.uk-container-small {
-    max-width: calc(50% + (900px / 2) - 24px);
+    max-width: calc(50% + (900px / 2) - 16px);
   }
 }
 /* Tablet landscape and bigger */
@@ -2614,13 +2614,13 @@ select.uk-form-width-xsmall {
 @media (min-width: 640px) {
   .uk-container-item-padding-remove-left,
   .uk-container-item-padding-remove-right {
-    width: calc(100% + 24px);
+    width: calc(100% + 16px);
   }
   .uk-container-item-padding-remove-left {
-    margin-left: -24px;
+    margin-left: -16px;
   }
   .uk-container-item-padding-remove-right {
-    margin-right: -24px;
+    margin-right: -16px;
   }
 }
 /* Tablet landscape and bigger */

@@ -1,3 +1,7 @@
+.header {
+    border-bottom: 1px solid var(--color-mystic-300);
+}
+
 .header-topbar {
     border-bottom: 1px solid var(--color-mystic-300);
 }
@@ -31,6 +35,11 @@
 }
 
 .header-topbar__list > li > a:hover {
+    text-decoration: none;
+    background-color: var(--color-mystic-300-a-20);
+}
+
+.header-topbar__list > li > a:active {
     text-decoration: none;
     background-color: var(--color-mystic-300-a-30);
 }
