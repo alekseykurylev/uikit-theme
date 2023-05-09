@@ -22,7 +22,7 @@
 </head>
 <body>
   <header>
-    <div class="uk-hidden@s">
+    <div class="header-mobile uk-hidden@s">
       mobile menu
     </div>
     <div class="header-topbar uk-grid-collapse uk-visible@s" uk-grid>
@@ -31,8 +31,24 @@
           <li class="uk-flex-none uk-hidden@l">
             <div>
               <div class="header-topbar__time-all uk-text-small">
-                <div><span uk-icon="server-time"></span> 15.01.2022 12:42:45 (MSK +4)</div>
-                <div><span uk-icon="server-time"></span> 15.01.2022 12:42:45 45 (MSK +4)</div>
+                <div>
+                  <span uk-icon="server-time"></span>
+                  <div>
+                    <ul class="uk-subnav uk-subnav-small uk-subnav-dot uk-margin-remove-bottom">
+                      <li>15.01.2022</li>
+                      <li>12:42:45 (MSK +4)</li>
+                    </ul> 
+                  </div>
+                </div>
+                <div>
+                  <span uk-icon="clock"></span>
+                  <div>
+                    <ul class="uk-subnav uk-subnav-small uk-subnav-dot uk-margin-remove-bottom">
+                      <li>15.01.2022</li>
+                      <li>12:42:45 (MSK +4)</li>
+                    </ul> 
+                  </div>
+                </div>
               </div>
             </div>
           </li>
@@ -41,7 +57,12 @@
               <span uk-icon="server-time"></span>
               <div class="uk-margin-12-left">
                 <div class="uk-text-xsmall">Время на сервере</div>
-                <div class="uk-text-small">15.01.2022 12:42:45 (MSK +4)</div>
+                <div class="uk-text-small">
+                  <ul class="uk-subnav uk-subnav-small uk-subnav-dot uk-margin-remove-bottom">
+                    <li>15.01.2022</li>
+                    <li>12:42:45 (MSK +4)</li>
+                  </ul>        
+                </div>
               </div>
             </div>
           </li>
@@ -50,7 +71,12 @@
               <span uk-icon="clock"></span>
               <div class="uk-margin-12-left">
                 <div class="uk-text-xsmall">Местное время</div>
-                <div class="uk-text-small">15.01.2022 12:42:45 (MSK +4)</div>
+                <div class="uk-text-small">
+                  <ul class="uk-subnav uk-subnav-small uk-subnav-dot uk-margin-remove-bottom">
+                    <li>15.01.2022</li>
+                    <li>12:42:45 (MSK +4)</li>
+                  </ul> 
+                </div>
               </div>
             </div>
           </li>
