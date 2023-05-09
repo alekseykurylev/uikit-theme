@@ -70,7 +70,7 @@
     color: var(--color-bali-hai-300);
 }
 
-@media (max-width: 959px) {
+@media (max-width: 995px) {
     .header-topbar__left .header-topbar__list > li > * {
         border: none;
     }
@@ -104,4 +104,42 @@
 
 .header-hero__nav > li > a .uk-badge {
     padding: 0 4px;
+}
+
+.header-hero__tel {
+    display: flex;
+    align-items: center;
+}
+
+.header-hero__tel a {
+    display: flex;
+    align-items: center;
+    color: var(--color-bali-hai-300);
+}
+
+.header-hero__tel a:hover {
+    color: var(--color-cerulean-link-hover);
+    text-decoration: none;
+}
+
+.header-hero__tel .uk-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-mystic-300);
+    border-radius: 500px;
+    margin-right: 12px;
+}
+
+.header-hero__tel .uk-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 1399px) {
+    .header-hero__tel > .uk-grid {
+        flex-direction: column;
+    }
 }
