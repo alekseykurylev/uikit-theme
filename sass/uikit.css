@@ -3192,15 +3192,15 @@ select.uk-form-width-xsmall {
  */
 .uk-badge {
   box-sizing: border-box;
-  min-width: 18px;
-  height: 18px;
-  padding: 0 5px;
-  border-radius: 500px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 2px;
+  border-radius: 4px;
   vertical-align: middle;
   /* 1 */
-  background: #1e87f0;
+  background: var(--color-cerulean-500);
   color: #fff !important;
-  font-size: 11px;
+  font-size: 12px;
   /* 2 */
   display: inline-flex;
   justify-content: center;
@@ -3215,18 +3215,34 @@ select.uk-form-width-xsmall {
   text-decoration: none;
 }
 
+.uk-badge-success {
+  background-color: var(--color-success-500);
+}
+
+.uk-badge-warning {
+  background-color: var(--color-warning-500);
+}
+
+.uk-badge-danger {
+  background-color: var(--color-alarm-500);
+}
+
 /* ========================================================================
    Component: Label
  ========================================================================== */
 .uk-label {
   display: inline-block;
-  padding: 0 16px;
-  background: #1e87f0;
+  padding: 2px 4px;
+  background: var(--color-cerulean-500);
   line-height: 1.428;
   font-size: 12px;
   color: #fff;
   vertical-align: middle;
   white-space: nowrap;
+  font-size: 10px;
+  line-height: 1.6;
+  border-radius: 2px;
+  font-weight: 700;
 }
 
 /* Color modifiers
@@ -3235,7 +3251,7 @@ select.uk-form-width-xsmall {
  * Success
  */
 .uk-label-success {
-  background-color: #32d296;
+  background-color: var(--color-success-500);
   color: #fff;
 }
 
@@ -3243,7 +3259,7 @@ select.uk-form-width-xsmall {
  * Warning
  */
 .uk-label-warning {
-  background-color: #faa05a;
+  background-color: var(--color-warning-500);
   color: #fff;
 }
 
@@ -3251,7 +3267,7 @@ select.uk-form-width-xsmall {
  * Danger
  */
 .uk-label-danger {
-  background-color: #f0506e;
+  background-color: var(--color-alarm-500);
   color: #fff;
 }
 
@@ -6046,6 +6062,42 @@ ul.uk-nav-sub {
  ========================================================================== */
 .uk-subnav > .uk-disabled > a {
   color: var(--color-bali-hai-300);
+}
+
+.uk-subnav-dot {
+  margin-left: -44px;
+}
+
+.uk-subnav-dot > * {
+  display: flex;
+  align-items: center;
+}
+
+.uk-subnav-dot > ::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: transparent;
+  border-radius: 500px;
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+.uk-subnav-dot > :nth-child(n+2):not(.uk-first-column)::before {
+  background-color: var(--color-cerulean-500);
+}
+
+.uk-subnav-small.uk-subnav-small > * {
+  padding-left: 8px;
+}
+
+.uk-subnav-small.uk-subnav-dot {
+  margin-left: -20px;
+}
+
+.uk-subnav-small.uk-subnav-dot > ::before {
+  margin-left: 0px;
+  margin-right: 8px;
 }
 
 /* ========================================================================
@@ -9700,6 +9752,102 @@ iframe[data-uk-cover] {
     margin-right: 0 !important;
   }
 }
+.uk-margin-2 {
+  margin-bottom: 2px;
+}
+
+* + .uk-margin-2 {
+  margin-top: 2px !important;
+}
+
+.uk-margin-2-top {
+  margin-top: 2px !important;
+}
+
+.uk-margin-2-bottom {
+  margin-bottom: 2px !important;
+}
+
+.uk-margin-2-left {
+  margin-left: 2px !important;
+}
+
+.uk-margin-2-right {
+  margin-right: 2px !important;
+}
+
+.uk-margin-4 {
+  margin-bottom: 4px;
+}
+
+* + .uk-margin-4 {
+  margin-top: 4px !important;
+}
+
+.uk-margin-4-top {
+  margin-top: 4px !important;
+}
+
+.uk-margin-4-bottom {
+  margin-bottom: 4px !important;
+}
+
+.uk-margin-4-left {
+  margin-left: 4px !important;
+}
+
+.uk-margin-4-right {
+  margin-right: 4px !important;
+}
+
+.uk-margin-8 {
+  margin-bottom: 8px;
+}
+
+* + .uk-margin-8 {
+  margin-top: 8px !important;
+}
+
+.uk-margin-8-top {
+  margin-top: 8px !important;
+}
+
+.uk-margin-8-bottom {
+  margin-bottom: 8px !important;
+}
+
+.uk-margin-8-left {
+  margin-left: 8px !important;
+}
+
+.uk-margin-8-right {
+  margin-right: 8px !important;
+}
+
+.uk-margin-12 {
+  margin-bottom: 12px;
+}
+
+* + .uk-margin-12 {
+  margin-top: 12px !important;
+}
+
+.uk-margin-12-top {
+  margin-top: 12px !important;
+}
+
+.uk-margin-12-bottom {
+  margin-bottom: 12px !important;
+}
+
+.uk-margin-12-left {
+  margin-left: 12px !important;
+}
+
+.uk-margin-12-right {
+  margin-right: 12px !important;
+}
+
 /* ========================================================================
    Component: Padding
  ========================================================================== */

@@ -9,6 +9,9 @@
 @import "theme/breadcrumb.scss";
 @import "theme/card.scss";
 @import "theme/close.scss";
+@import "theme/label.scss";
+@import "theme/badge.scss";
+@import "theme/subnav.scss";
 
 
 // 2. Import default variables and available mixins.
@@ -23,6 +26,10 @@
 @import "theme/heading-mixins.scss";
 @import "theme/breadcrumb-mixins.scss";
 @import "theme/card-mixins.scss";
+@import "theme/margin-mixins.scss";
+@import "theme/label-mixins.scss";
+@import "theme/badge-mixins.scss";
+@import "theme/subnav-mixins.scss";
 
 
 // 4. Import UIkit
