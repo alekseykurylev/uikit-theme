@@ -3055,7 +3055,7 @@ select.uk-form-width-xsmall {
 .uk-alert {
   position: relative;
   margin-bottom: 24px;
-  padding: 16px 30px 16px 16px;
+  padding: 16px 38px 16px 16px;
   background: var(--color-mystic-300-a-30);
   color: var(--color-mine-shaft-900);
   border: 1px solid;
@@ -3083,7 +3083,7 @@ select.uk-form-width-xsmall {
  ========================================================================== */
 .uk-alert-close {
   position: absolute;
-  top: 21px;
+  top: 16px;
   right: 16px;
 }
 

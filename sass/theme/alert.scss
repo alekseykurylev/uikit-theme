@@ -1,4 +1,7 @@
 $alert-padding: 16px;
+$alert-padding-right: $alert-padding + 22px;
+
+$alert-close-top: $alert-padding;
 
 $alert-background: var(--color-mystic-300-a-30);
 $alert-color: var(--color-mine-shaft-900);
