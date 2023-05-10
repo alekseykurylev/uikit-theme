@@ -109,6 +109,15 @@
               <div class="uk-h3 uk-visible@m">Мой кабинет</div>
               <span uk-icon="down-arrow-circle"></span>
             </a>
+            <div style="background-color: bisque;" uk-drop="offset: 0; pos: bottom-right">
+              <ul class="uk-nav">
+                <li class="uk-active"><a href="">Настройка параметров</a></li>
+                <li><a href="">Пользователи</a></li>
+                <li><a href="">Шаблоны протоколов</a></li>
+                <li><a href="">Реестр комиссий</a></li>
+                <li><a href="">Выйти</a></li>
+              </ul>
+            </div>
           </li>
           <!-- <li>
             <div>
@@ -176,7 +185,52 @@
       </div>
     </div>
     <div class="header-nav uk-visible@s">
-      <div class="uk-container uk-container-expand">123</div>
+      <div class="uk-container uk-container-expand">
+        <div class="uk-child-width-expand uk-flex-middle uk-grid-large" uk-grid>
+          <div>
+            <nav class="uk-navbar-container" uk-navbar>
+              <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                  <li class="uk-active"><a href="">Закупки</a></li>
+                  <li><a href="">Запросы</a></li>
+                  <li><a href="">Контракты</a></li>
+                  <li><a href="">Не забыть</a></li>
+                  <li><a href="">Дополнительные сервисы</a></li>
+                  <li>
+                    <a href="">Ещё...</a>
+                    <div style="background-color: tomato;" uk-drop="offset: 0">
+                      <ul class="uk-nav">
+                        <li class="uk-active">
+                          <a href="#">Дополнительные сервисы</a>
+                          <div style="background-color: bisque;" uk-drop="offset: 0; pos: right-top">
+                            <ul class="uk-nav">
+                              <li class="uk-active"><a href="">Калькулятор пени и штрафов ПП 1042</a></li>
+                              <li><a href="">Калькулятор НМЦК (охрана)</a></li>
+                              <li><a href="">Поиск по решениям ФАС</a></li>
+                              <li><a href="">Проверка ГОСТ/СНиП</a></li>
+                              <li><a href="">ОКПД 2/КТРУ</a></li>
+                              <li><a href="">НМЦК (анализ рынка)</a></li>
+                              <li><a href="">НМЦК (мед.изделия)</a></li>
+                              <li><a href="">НМЦК (ПВХ)</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="#">Секции</a></li>
+                        <li><a href="#">Реестры</a></li>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Обучение</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="uk-width-auto">
+            <a class="uk-flex uk-flex-middle" href=""><span class="uk-margin-4-right" uk-icon="question"></span> Обращение в техподдержку</a>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   
