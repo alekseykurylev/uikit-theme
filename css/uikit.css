@@ -43,7 +43,7 @@ a:hover,
 .uk-link:hover,
 .uk-link-toggle:hover .uk-link {
   color: var(--color-cerulean-link-hover);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Text-level semantics
@@ -1313,6 +1313,11 @@ button.uk-icon:not(:disabled) {
 .uk-active > .uk-icon-button {
   background-color: #dfdfdf;
   color: var(--color-mine-shaft-900);
+}
+
+.uk-icon-size-16 > svg {
+  width: 16px;
+  height: 16px;
 }
 
 /* ========================================================================
@@ -5556,7 +5561,7 @@ ul.uk-nav-sub {
 /* Container
  ========================================================================== */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #f8f8f8;
+  background: var(--color-white);
 }
 
 /* Groups
@@ -5667,10 +5672,10 @@ ul.uk-nav-sub {
   column-gap: 0.25em;
   /* 3 */
   box-sizing: border-box;
-  min-height: 80px;
+  min-height: 52px;
   /* 4 */
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-family: "Exo 2", sans-serif;
   /* 5 */
   text-decoration: none;
 }
@@ -5679,8 +5684,10 @@ ul.uk-nav-sub {
  * Nav items
  */
 .uk-navbar-nav > li > a {
-  padding: 0 15px;
-  color: var(--color-bali-hai-300);
+  padding: 0 0;
+  color: var(--color-cerulean-500);
+  white-space: nowrap;
+  font-weight: 700;
 }
 
 /*
@@ -5694,12 +5701,12 @@ ul.uk-nav-sub {
 
 /* OnClick */
 .uk-navbar-nav > li > a:active {
-  color: var(--color-black);
+  color: var(--color-mine-shaft-900);
 }
 
 /* Active */
 .uk-navbar-nav > li.uk-active > a {
-  color: var(--color-black);
+  color: var(--color-mine-shaft-900);
 }
 
 /* Parent icon modifier
@@ -5936,6 +5943,41 @@ ul.uk-nav-sub {
 /*
  * Adopts `uk-dropnav-dropbar`
  */
+.uk-navbar-nav > li {
+  padding-right: 32px;
+}
+
+.uk-navbar-nav > li > a {
+  position: relative;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color, border-color, box-shadow;
+}
+
+.uk-navbar-nav > li > a:hover::before,
+.uk-navbar-nav > li > a[aria-expanded=true]::before {
+  left: 0;
+  right: 0;
+  background-color: var(--color-cerulean-500);
+}
+
+.uk-navbar-nav > li > a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  height: 4px;
+  transition: 0.3s ease-in-out;
+  transition-property: background-color, border-color, box-shadow, height, left, right, opacity;
+  left: 50%;
+  right: 50%;
+}
+
+.uk-navbar-nav > li.uk-active > a::before {
+  background-color: var(--color-cerulean-500);
+  left: 0;
+  right: 0;
+}
+
 /* ========================================================================
    Component: Subnav
  ========================================================================== */
@@ -7902,7 +7944,7 @@ ul.uk-nav-sub {
 }
 
 .uk-text-primary {
-  color: #1e87f0 !important;
+  color: var(--color-cerulean-500) !important;
 }
 
 .uk-text-secondary {

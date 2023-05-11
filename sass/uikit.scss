@@ -13,6 +13,7 @@
 @import "theme/badge.scss";
 @import "theme/subnav.scss";
 @import "theme/container.scss";
+@import "theme/navbar.scss";
 
 
 // 2. Import default variables and available mixins.
@@ -22,6 +23,7 @@
 
 // // 3. Your custom mixin overwrites.
 @import "theme/alert-mixins.scss";
+@import "theme/icon-mixins.scss";
 @import "theme/button-mixins.scss";
 @import "theme/text-mixins.scss";
 @import "theme/heading-mixins.scss";
@@ -31,6 +33,7 @@
 @import "theme/label-mixins.scss";
 @import "theme/badge-mixins.scss";
 @import "theme/subnav-mixins.scss";
+@import "theme/navbar-mixins.scss";
 
 
 // 4. Import UIkit
