@@ -52,11 +52,6 @@
     margin-right: 8px;
 }
 
-.header-topbar__time-all .uk-icon svg {
-    width: 16px;
-    height: 16px;
-}
-
 .header-topbar__user .uk-h3 {
     margin-right: 8px;
     margin-bottom: 0;
@@ -97,11 +92,6 @@
     color: var(--color-cerulean-link-hover);
 }
 
-.header-hero__nav > li > a svg {
-    width: 16px;
-    height: 16px;
-}
-
 .header-hero__nav > li > a .uk-badge {
     padding: 0 4px;
 }
@@ -131,11 +121,6 @@
     border: 1px solid var(--color-mystic-300);
     border-radius: 500px;
     margin-right: 12px;
-}
-
-.header-hero__tel .uk-icon svg {
-    width: 16px;
-    height: 16px;
 }
 
 @media (max-width: 1399px) {
