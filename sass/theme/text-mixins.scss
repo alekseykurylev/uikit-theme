@@ -11,4 +11,18 @@
     font-size: 10px;
     line-height: 1.6;
   }
+
+  .uk-text-truncate-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+
+  .uk-text-truncate-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
 }
