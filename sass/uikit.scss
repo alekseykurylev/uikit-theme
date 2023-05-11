@@ -14,6 +14,8 @@
 @import "theme/subnav.scss";
 @import "theme/container.scss";
 @import "theme/navbar.scss";
+@import "theme/nav.scss";
+@import "theme/drop.scss";
 
 
 // 2. Import default variables and available mixins.
@@ -34,6 +36,7 @@
 @import "theme/badge-mixins.scss";
 @import "theme/subnav-mixins.scss";
 @import "theme/navbar-mixins.scss";
+@import "theme/nav-mixins.scss";
 
 
 // 4. Import UIkit

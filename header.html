@@ -110,15 +110,21 @@
               <div class="uk-h3 uk-visible@m">Мой кабинет</div>
               <span uk-icon="down-arrow-circle"></span>
             </a>
-            <div style="background-color: bisque;" uk-drop="offset: 0; pos: bottom-right">
-              <ul class="uk-nav">
-                <li class="uk-active"><a href="">Настройка параметров</a></li>
-                <li><a href="">Пользователи</a></li>
-                <li><a href="">Шаблоны протоколов</a></li>
-                <li><a href="">Реестр комиссий</a></li>
-                <li><a href="">Выйти</a></li>
-              </ul>
-            </div>
+            <ul class="uk-nav" uk-drop="pos: bottom-right" uk-nav>
+              <li class="uk-parent">
+                <a href="#">Настройка параметров <span uk-nav-parent-icon></span></a>
+                <ul class="uk-nav-sub">
+                  <li><a href="#">Параметр первый</a></li>
+                  <li><a href="#">Параметр второй</a></li>
+                </ul>
+              </li>
+              </li>
+              <li><a href="#">Пользователи</a></li>
+              <li><a href="#">Шаблоны протоколов</a></li>
+              <li><a href="#">Реестр комиссий</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#">Выйти</a></li>
+            </ul>
           </li>
           <!-- <li>
             <div>
@@ -197,46 +203,34 @@
                   <li><a href="#">Контракты</a></li>
                   <li><a href="#">Протоколы</a></li>
                   <li><a href="#">Не забыть</a></li>
-                  <li><a href="#">Дополнительные сервисы</a></li>
+                  <li>
+                    <a href="#">Дополнительные сервисы</a>
+                    <ul class="uk-nav" uk-drop>
+                      <li><a href="">Калькулятор пени и штрафов ПП 1042</a></li>
+                      <li><a href="#">Калькулятор НМЦК (охрана)</a></li>
+                      <li><a href="#">Поиск по решениям ФАС</a></li>
+                      <li><a href="#">Проверка ГОСТ/СНиП</a></li>
+                      <li><a href="#">ОКПД 2/КТРУ</a></li>
+                      <li><a href="#">НМЦК (анализ рынка)</a></li>
+                      <li><a href="#">НМЦК (мед.изделия)</a></li>
+                      <li><a href="#">НМЦК (ПВХ)</a></li>
+                    </ul>
+                  </li>
                   <li class="more">
                     <a href="#">Ещё...</a>
-                    <div style="background-color: tomato;" uk-drop="offset: 0">
-                      <ul class="uk-nav">
-                        <li class="uk-active">
-                          <a href="#">Дополнительные сервисы</a>
-                          <div style="background-color: bisque;" uk-drop="offset: 0; pos: right-top">
-                            <ul class="uk-nav">
-                              <li class="uk-active"><a href="">Калькулятор пени и штрафов ПП 1042</a></li>
-                              <li><a href="#">Калькулятор НМЦК (охрана)</a></li>
-                              <li><a href="#">Поиск по решениям ФАС</a></li>
-                              <li><a href="#">Проверка ГОСТ/СНиП</a></li>
-                              <li><a href="#">ОКПД 2/КТРУ</a></li>
-                              <li><a href="#">НМЦК (анализ рынка)</a></li>
-                              <li><a href="#">НМЦК (мед.изделия)</a></li>
-                              <li><a href="#">НМЦК (ПВХ)</a></li>
-                            </ul>
-                          </div>
-                        </li>
+                    <ul class="uk-nav" uk-drop>
                         <li><a href="#">Секции</a></li>
-                        <li><a href="#">Реестры</a></li>
-                        <li><a href="#">Документация</a></li>
+                        <li class="uk-active"><a href="#">Текущий раздел</a></li>
                         <li>
-                          <a href="#">Дополнительные сервисы2</a>
-                          <div style="background-color: bisque;" uk-drop="offset: 0; pos: right-top">
-                            <ul class="uk-nav">
-                              <li class="uk-active"><a href="">Калькулятор пени и штрафов ПП 1042</a></li>
-                              <li><a href="#">Калькулятор НМЦК (охрана)</a></li>
-                              <li><a href="#">Поиск по решениям ФАС</a></li>
-                              <li><a href="#">Проверка ГОСТ/СНиП</a></li>
-                              <li><a href="#">ОКПД 2/КТРУ</a></li>
-                              <li><a href="#">НМЦК (анализ рынка)</a></li>
-                              <li><a href="#">НМЦК (мед.изделия)</a></li>
-                              <li><a href="#">НМЦК (ПВХ)</a></li>
-                            </ul>
-                          </div>
+                          <a href="#">Капитальный ремонт</a>
+                          <ul class="uk-nav" uk-drop="pos: right-top">
+                            <li><a href="#">Реестр квалифицированных подрядных организаций</a></li>
+                            <li><a href="#">Закупки по 615-ПП</a></li>
+                            <li><a href="#">Документация</a></li>
+                          </ul>
                         </li>
+                        <li><a href="#">Поддержка</a></li>
                       </ul>
-                    </div>
                   </li>
                 </ul>
               </div>
@@ -265,7 +259,7 @@
         list.insertAdjacentHTML('beforeend', `
         <li class="more">
           <a href="#">Ещё...</a>
-          <div uk-drop="offset: 0">
+          <div uk-drop>
             <ul class="uk-nav"></ul>
           </div>
         </li>`)
@@ -273,7 +267,7 @@
       
       const handleOverflowNavbar = () => {
         const itemMore = list.querySelector(':scope > li.more');
-        const itemMoreList = itemMore.querySelector(':scope > [uk-drop] > .uk-nav');
+        const itemMoreList = itemMore.querySelector(':scope > .uk-nav');
 
         itemMoreList.replaceChildren(...listMore)
         items.forEach((item) => {
