@@ -73,4 +73,14 @@
     background-color: var(--color-bali-hai-200);
     color: var(--color-mystic-200);
   }
+
+  .uk-button-icon {
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+  }
+
+  .uk-button-icon.uk-button-small {
+    height: 32px;
+  }
 }
