@@ -2218,7 +2218,7 @@ select.uk-form-width-xsmall {
 /* Size modifiers
  ========================================================================== */
 .uk-button-small {
-  padding: 0 16px;
+  padding: 0 8px;
   line-height: 30px;
   font-size: 14px;
   font-family: "Inter";
@@ -2314,6 +2314,16 @@ select.uk-form-width-xsmall {
   border-color: var(--color-bali-hai-200);
   background-color: var(--color-bali-hai-200);
   color: var(--color-mystic-200);
+}
+
+.uk-button-icon {
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+}
+
+.uk-button-icon.uk-button-small {
+  height: 32px;
 }
 
 /* ========================================================================
@@ -2784,7 +2794,7 @@ select.uk-form-width-xsmall {
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-card-body {
-    padding: 32px 32px;
+    padding: 24px 24px;
   }
   .uk-card-header {
     padding: 16px 32px;
@@ -2948,12 +2958,19 @@ select.uk-form-width-xsmall {
 }
 
 .uk-card-default.uk-card-hover-box-shadow:hover {
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.02), 0px 7px 5px rgba(0, 0, 0, 0.03), 0px 13px 10px rgba(0, 0, 0, 0.04), 0px 22px 18px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--card-shadow);
 }
 
 .uk-card-default.uk-card-hover-box-shadow:active {
   box-shadow: none;
   border-color: var(--color-cerulean-500);
+}
+
+.uk-card.uk-drop {
+  background-color: var(--color-white);
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--color-mystic-300);
+  border-radius: 8px;
 }
 
 /* ========================================================================
@@ -5614,6 +5631,11 @@ ul.uk-nav-sub {
   color: var(--color-white);
 }
 
+.uk-nav.uk-drop .uk-nav-header {
+  padding: 10px 16px;
+  text-transform: none;
+}
+
 /* ========================================================================
    Component: Navbar
  ========================================================================== */
@@ -8210,6 +8232,20 @@ td.uk-text-break {
 .uk-text-xsmall {
   font-size: 10px;
   line-height: 1.6;
+}
+
+.uk-text-truncate-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.uk-text-truncate-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* ========================================================================

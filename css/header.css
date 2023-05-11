@@ -34,7 +34,8 @@
     border-left: 1px solid var(--color-mystic-300);
 }
 
-.header-topbar__list > li > a:hover {
+.header-topbar__list > li > a:hover,
+.header-topbar__list > li > a[aria-expanded="true"] {
     text-decoration: none;
     background-color: var(--color-mystic-300-a-20);
 }
@@ -52,12 +53,12 @@
     margin-right: 8px;
 }
 
-.header-topbar__user .uk-h3 {
+.header-topbar__profile .uk-h3 {
     margin-right: 8px;
     margin-bottom: 0;
 }
 
-.header-topbar .uk-button {
+.header-topbar .header-topbar__login {
     line-height: 40px;
 }
 
@@ -127,4 +128,31 @@
     .header-hero__tel > .uk-grid {
         flex-direction: column;
     }
+}
+
+.header-topbar__bell .uk-card.uk-drop {
+    min-width: 436px;
+}
+
+.header-topbar__bell .uk-card.uk-drop .uk-close {
+    color: var(--color-mystic-500);
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.header-topbar__bell .uk-card.uk-drop .uk-close:hover {
+    color: var(--color-cerulean-link-hover);
+}
+
+.header-topbar__bell .uk-card.uk-drop .uk-list > li:not(:last-child)::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 500px;
+    margin-right: 6px;
+    background-color: red;
+    position: relative;
+    top: -3px;
 }
