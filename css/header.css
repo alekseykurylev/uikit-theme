@@ -6,7 +6,8 @@
     border-bottom: 1px solid var(--color-mystic-300);
 }
 
-.header-topbar__list > li > *:first-child {
+.header-topbar__list > li > *:first-child,
+.header-mobile > div > *:first-child {
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -30,18 +31,17 @@
     border: none;
 }
 
-.header-topbar__right .header-topbar__list > li > *:first-child {
+.header-topbar__right .header-topbar__list > li > *:first-child,
+.header-mobile > div:not(:first-child) > *:first-child {
     border-left: 1px solid var(--color-mystic-300);
 }
 
 .header-topbar__list > li > a:hover,
 .header-topbar__list > li > a[aria-expanded="true"] {
-    text-decoration: none;
     background-color: var(--color-mystic-300-a-20);
 }
 
 .header-topbar__list > li > a:active {
-    text-decoration: none;
     background-color: var(--color-mystic-300-a-30);
 }
 
@@ -53,12 +53,7 @@
     margin-right: 8px;
 }
 
-.header-topbar__profile .uk-h3 {
-    margin-right: 8px;
-    margin-bottom: 0;
-}
-
-.header-topbar .header-topbar__login {
+.header-topbar .header-topbar__login .uk-button {
     line-height: 40px;
 }
 
@@ -76,24 +71,20 @@
     padding: 24px 0;
 }
 
-.header-hero__nav > li > a {
+.header-nav > li > a {
     display: flex;
     align-items: center;
 }
 
-.header-hero__nav > li > a:hover {
-    text-decoration: none;
-}
-
-.header-hero__nav > li > a > div {
+.header-nav > li > a > div {
     color: var(--color-bali-hai-300);
 }
 
-.header-hero__nav > li > a:hover > div {
+.header-nav > li > a:hover > div {
     color: var(--color-cerulean-link-hover);
 }
 
-.header-hero__nav > li > a .uk-badge {
+.header-nav > li > a .uk-badge {
     padding: 0 4px;
 }
 
@@ -110,7 +101,6 @@
 
 .header-hero__tel a:hover {
     color: var(--color-cerulean-link-hover);
-    text-decoration: none;
 }
 
 .header-hero__tel .uk-icon {

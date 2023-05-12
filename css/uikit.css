@@ -5229,6 +5229,26 @@ select.uk-form-width-xsmall {
   flex: auto;
 }
 
+/* Horizontal */
+.uk-grid-xsmall,
+.uk-grid-column-xsmall {
+  margin-left: -8px;
+}
+
+.uk-grid-xsmall > *,
+.uk-grid-column-xsmall > * {
+  padding-left: 8px;
+}
+
+/* Vertical */
+.uk-grid + .uk-grid-xsmall,
+.uk-grid + .uk-grid-row-xsmall,
+.uk-grid-xsmall > .uk-grid-margin,
+.uk-grid-row-xsmall > .uk-grid-margin,
+* + .uk-grid-margin-xsmall {
+  margin-top: 8px;
+}
+
 /* ========================================================================
    Component: Nav
  ========================================================================== */
@@ -5627,8 +5647,8 @@ ul.uk-nav-sub {
   color: var(--color-cerulean-500);
 }
 
-.uk-nav.uk-drop .uk-parent > a:hover .uk-nav-parent-icon {
-  color: var(--color-white);
+.uk-nav.uk-drop li > a:hover .uk-icon {
+  color: var(--color-white) !important;
 }
 
 .uk-nav.uk-drop .uk-nav-header {
