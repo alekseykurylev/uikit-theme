@@ -33,7 +33,25 @@
                 <button class="uk-offcanvas-close" type="button" uk-close></button>
               </div>
               <div class="uk-offcanvas-body uk-width-expand" uk-overflow-auto>
-
+                <ul uk-nav>
+                  <li><a href="#">Закупки</a></li>
+                  <li><a href="#">Запросы</a></li>
+                  <li><a href="#">Контракты</a></li>
+                  <li><a href="#">Не забыть</a></li>
+                  <li class="uk-parent">
+                    <a href="#">Дополнительные сервисы <span uk-nav-parent-icon></span></a>
+                    <ul class="uk-nav-sub">
+                      <li><a href="#">Поиск по решениям ФАС</a></li>
+                      <li><a href="#">Калькулятор НМЦК (охрана)</a></li>
+                      <li class="uk-active"><a href="#">Текущий раздел</a></li>
+                      <li><a href="#">Поиск документации</a></li>
+                    </ul>
+                  </li>
+                  </li>
+                  <li><a href="#">Секции</a></li>
+                  <li class="uk-active"><a href="#">Текущий раздел</a></li>
+                  <li><a href="#">Реестр комиссий</a></li>
+                </ul>
               </div>
               <div class="uk-offcanvas-footer uk-text-right">
                 <div class="uk-text-small uk-margin-small-bottom">
@@ -78,7 +96,7 @@
       </div>
       <div>
         <a href="#"><span uk-icon="down-arrow-circle"></span></a>
-        <ul class="uk-nav" uk-drop="pos: bottom-right; mode: click" uk-nav>
+        <ul uk-drop="pos: bottom-right; mode: click" uk-nav>
           <li class="uk-nav-header">
             <div class="uk-flex uk-flex-middle uk-text-muted">
               <span uk-icon="user" class="uk-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#009DDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#009DDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
@@ -117,9 +135,9 @@
         <ul class="header-topbar__list uk-grid-collapse uk-child-width-auto uk-flex-nowrap" uk-grid>
           <li class="uk-flex-none uk-hidden@l">
             <div>
-              <div class="header-topbar__time-all uk-text-small">
-                <div>
-                  <span uk-icon="server-time" class="uk-icon-size-16"></span>
+              <div class="uk-text-small">
+                <div class="uk-flex">
+                  <span uk-icon="server-time" class="uk-icon-size-16 uk-margin-8-right"></span>
                   <div>
                     <ul class="uk-subnav uk-subnav-small uk-subnav-dot uk-margin-remove-bottom">
                       <li>15.01.2022</li>
@@ -127,8 +145,8 @@
                     </ul> 
                   </div>
                 </div>
-                <div>
-                  <span uk-icon="clock" class="uk-icon-size-16"></span>
+                <div class="uk-flex">
+                  <span uk-icon="clock" class="uk-icon-size-16 uk-margin-8-right"></span>
                   <div>
                     <ul class="uk-subnav uk-subnav-small uk-subnav-dot uk-margin-remove-bottom">
                       <li>15.01.2022</li>
@@ -255,11 +273,11 @@
               <li><a href="#">Выйти</a></li>
             </ul>
           </li>
-          <li class="header-topbar__login">
+          <!-- <li class="header-topbar__login">
             <div>
               <button type="button" class="uk-button uk-button-primary">Войти</button>
             </div>
-          </li>
+          </li> -->
           <li class="uk-visible@l">
             <a class="header-topbar__logout" href="#"><span uk-icon="logout"></span></a>
           </li>
