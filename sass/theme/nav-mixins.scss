@@ -63,8 +63,8 @@
     color: var(--color-cerulean-500);
   }
 
-  .uk-nav.uk-drop .uk-parent > a:hover .uk-nav-parent-icon {
-    color: var(--color-white);
+  .uk-nav.uk-drop li > a:hover .uk-icon {
+    color: var(--color-white) !important;
   }
 
   .uk-nav.uk-drop .uk-nav-header {
