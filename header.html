@@ -27,10 +27,21 @@
       <div class="header-mobile__drawer">
         <a href="#offcanvas-usage" uk-toggle><span uk-icon="menu"></span></a>
         <div id="offcanvas-usage" uk-offcanvas="overlay: true">
-            <div class="uk-offcanvas-bar">
+            <div class="uk-offcanvas-bar uk-offcanvas-width-full uk-flex uk-flex-column">
+              <div class="uk-offcanvas-header">
+                <a href="/"><img src="img/logo.svg" width="200" height="24" alt="Фабрикант"></a>
                 <button class="uk-offcanvas-close" type="button" uk-close></button>
-                <h3>Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="uk-offcanvas-body uk-width-expand" uk-overflow-auto>
+
+              </div>
+              <div class="uk-offcanvas-footer uk-text-right">
+                <div class="uk-text-small uk-margin-small-bottom">
+                  <a class="uk-link-muted" href="tel:84994606602">8 (499) 460-66-02</a>
+                  <a class="uk-link-muted uk-margin-12-left" href="tel:84951389678">8 (495) 138-96-78</a>
+                </div>
+                <div><a class="uk-text-small uk-flex-inline uk-flex-middle" href="#"><span class="uk-margin-4-right uk-icon-size-16" uk-icon="question"></span> Обращение в техподдержку</a></div>
+              </div>
             </div>
         </div>
         
@@ -67,7 +78,7 @@
       </div>
       <div>
         <a href="#"><span uk-icon="down-arrow-circle"></span></a>
-        <ul class="uk-nav" uk-drop="pos: bottom-right" uk-nav>
+        <ul class="uk-nav" uk-drop="pos: bottom-right; mode: click" uk-nav>
           <li class="uk-nav-header">
             <div class="uk-flex uk-flex-middle uk-text-muted">
               <span uk-icon="user" class="uk-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#009DDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#009DDB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>

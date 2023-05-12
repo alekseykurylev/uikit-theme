@@ -16,6 +16,8 @@
 @import "theme/navbar.scss";
 @import "theme/nav.scss";
 @import "theme/drop.scss";
+@import "theme/offcanvas.scss";
+@import "theme/link.scss";
 
 
 // 2. Import default variables and available mixins.
@@ -38,6 +40,7 @@
 @import "theme/navbar-mixins.scss";
 @import "theme/nav-mixins.scss";
 @import "theme/grid-mixins.scss";
+@import "theme/offcanvas-mixins.scss";
 
 
 // 4. Import UIkit
