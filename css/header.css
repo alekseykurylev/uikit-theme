@@ -1,5 +1,6 @@
 .header {
     border-bottom: 1px solid var(--color-mystic-300);
+    background-color: var(--color-white);
 }
 
 .header-topbar {

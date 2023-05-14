@@ -16,7 +16,7 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 3 */
-  background: #fff;
+  background: var(--color-mystic-40);
   color: var(--color-mine-shaft-900);
 }
 
@@ -1567,7 +1567,7 @@ button.uk-icon:not(:disabled) {
  */
 .uk-input,
 .uk-select:not([multiple]):not([size]) {
-  height: 48px;
+  height: 40px;
   vertical-align: middle;
   /* 1 */
   display: inline-block;
@@ -1576,7 +1576,7 @@ button.uk-icon:not(:disabled) {
 /* 2 */
 .uk-input:not(input),
 .uk-select:not(select) {
-  line-height: 48px;
+  line-height: 40px;
 }
 
 /*
@@ -1659,7 +1659,7 @@ textarea.uk-form-small,
 
 /* Single-line */
 .uk-form-large:not(textarea):not([multiple]):not([size]) {
-  height: 64px;
+  height: 48px;
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -1672,7 +1672,7 @@ textarea.uk-form-large,
 }
 
 .uk-form-large:not(select):not(input):not(textarea) {
-  line-height: 64px;
+  line-height: 48px;
 }
 
 /* Style modifier (`uk-input`, `uk-select` and `uk-textarea`)
@@ -1995,7 +1995,7 @@ select.uk-form-width-xsmall {
   bottom: 0;
   left: 0;
   /* 2 */
-  width: 48px;
+  width: 40px;
   /* 3 */
   display: inline-flex;
   justify-content: center;
@@ -2022,7 +2022,7 @@ select.uk-form-width-xsmall {
  * Input padding
  */
 .uk-form-icon:not(.uk-form-icon-flip) ~ .uk-input {
-  padding-left: 48px !important;
+  padding-left: 40px !important;
 }
 
 /*
@@ -2034,7 +2034,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-form-icon-flip ~ .uk-input {
-  padding-right: 48px !important;
+  padding-right: 40px !important;
 }
 
 /* ========================================================================
@@ -2388,15 +2388,15 @@ select.uk-form-width-xsmall {
 .uk-section {
   display: flow-root;
   box-sizing: border-box; /* 1 */
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* Desktop and bigger */
 @media (min-width: 996px) {
   .uk-section {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 /*
@@ -2428,30 +2428,30 @@ select.uk-form-width-xsmall {
  * Large
  */
 .uk-section-large {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /* Tablet landscape and bigger */
 @media (min-width: 996px) {
   .uk-section-large {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 /*
  * XLarge
  */
 .uk-section-xlarge {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 /* Tablet landscape and bigger */
 @media (min-width: 996px) {
   .uk-section-xlarge {
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding-top: 88px;
+    padding-bottom: 88px;
   }
 }
 /* Style modifiers
@@ -2460,7 +2460,7 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-section-default {
-  background: var(--color-mystic-40);
+  background: #fff;
 }
 
 /*
@@ -2490,6 +2490,12 @@ select.uk-form-width-xsmall {
  * Reserved modifier to make a section overlap another section with an border image
  * Implemented by the theme
  */
+@media (min-width: 768px) {
+  .uk-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 /* ========================================================================
    Component: Container
  ========================================================================== */
@@ -2676,8 +2682,8 @@ select.uk-form-width-xsmall {
   .uk-tile {
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 /*
@@ -2709,30 +2715,30 @@ select.uk-form-width-xsmall {
  * Large
  */
 .uk-tile-large {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /* Tablet landscape and bigger */
 @media (min-width: 996px) {
   .uk-tile-large {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 /*
  * XLarge
  */
 .uk-tile-xlarge {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 /* Tablet landscape and bigger */
 @media (min-width: 996px) {
   .uk-tile-xlarge {
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding-top: 88px;
+    padding-bottom: 88px;
   }
 }
 /* Style modifiers
@@ -2926,15 +2932,15 @@ select.uk-form-width-xsmall {
  */
 .uk-card-small.uk-card-body,
 .uk-card-small .uk-card-body {
-  padding: 24px 24px;
+  padding: 16px 16px;
 }
 
 .uk-card-small .uk-card-header {
-  padding: 16px 24px;
+  padding: 11px 16px;
 }
 
 .uk-card-small .uk-card-footer {
-  padding: 16px 24px;
+  padding: 11px 16px;
 }
 
 /*
@@ -2944,13 +2950,13 @@ select.uk-form-width-xsmall {
 @media (min-width: 1200px) {
   .uk-card-large.uk-card-body,
   .uk-card-large .uk-card-body {
-    padding: 48px 48px;
+    padding: 40px 40px;
   }
   .uk-card-large .uk-card-header {
-    padding: 24px 48px;
+    padding: 20px 40px;
   }
   .uk-card-large .uk-card-footer {
-    padding: 24px 48px;
+    padding: 20px 40px;
   }
 }
 .uk-card-default.uk-card-hover:active {
@@ -3347,7 +3353,7 @@ select.uk-form-width-xsmall {
 /* Adjacent sibling
  ========================================================================== */
 .uk-article + .uk-article {
-  margin-top: 48px;
+  margin-top: 40px;
 }
 
 /* Title
@@ -3421,7 +3427,7 @@ select.uk-form-width-xsmall {
 
 /* Adjacent siblings */
 .uk-comment-list > :nth-child(n+2) {
-  margin-top: 48px;
+  margin-top: 40px;
 }
 
 /*
@@ -3429,7 +3435,7 @@ select.uk-form-width-xsmall {
  * Note: General sibling selector allows reply block between comment and sublist
  */
 .uk-comment-list .uk-comment ~ ul {
-  margin: 48px 0 0 0;
+  margin: 40px 0 0 0;
   padding-left: 30px;
   list-style: none;
 }
@@ -3442,7 +3448,7 @@ select.uk-form-width-xsmall {
 }
 /* Adjacent siblings */
 .uk-comment-list .uk-comment ~ ul > :nth-child(n+2) {
-  margin-top: 48px;
+  margin-top: 40px;
 }
 
 /* Style modifier
@@ -3580,7 +3586,7 @@ select.uk-form-width-xsmall {
  * Input
  */
 .uk-search-default .uk-search-input {
-  height: 48px;
+  height: 40px;
   padding-left: 10px;
   padding-right: 10px;
   background: #f8f8f8;
@@ -3595,15 +3601,15 @@ select.uk-form-width-xsmall {
  * Icon
  */
 .uk-search-default .uk-search-icon {
-  width: 48px;
+  width: 40px;
 }
 
 .uk-search-default .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
-  padding-left: 48px;
+  padding-left: 40px;
 }
 
 .uk-search-default .uk-search-icon-flip ~ .uk-search-input {
-  padding-right: 48px;
+  padding-right: 40px;
 }
 
 /* Navbar modifier
@@ -4980,11 +4986,11 @@ select.uk-form-width-xsmall {
   /* Horizontal */
   .uk-grid-large,
   .uk-grid-column-large {
-    margin-left: -48px;
+    margin-left: -40px;
   }
   .uk-grid-large > *,
   .uk-grid-column-large > * {
-    padding-left: 48px;
+    padding-left: 40px;
   }
   /* Vertical */
   .uk-grid + .uk-grid-large,
@@ -4992,7 +4998,7 @@ select.uk-form-width-xsmall {
   .uk-grid-large > .uk-grid-margin,
   .uk-grid-row-large > .uk-grid-margin,
   * + .uk-grid-margin-large {
-    margin-top: 48px;
+    margin-top: 40px;
   }
 }
 /*
@@ -5206,30 +5212,30 @@ select.uk-form-width-xsmall {
   /* Horizontal */
   .uk-grid-divider.uk-grid-large,
   .uk-grid-divider.uk-grid-column-large {
-    margin-left: -96px;
+    margin-left: -80px;
   }
   .uk-grid-divider.uk-grid-large > *,
   .uk-grid-divider.uk-grid-column-large > * {
-    padding-left: 96px;
+    padding-left: 80px;
   }
   .uk-grid-divider.uk-grid-large > :not(.uk-first-column)::before,
   .uk-grid-divider.uk-grid-column-large > :not(.uk-first-column)::before {
-    left: 48px;
+    left: 40px;
   }
   /* Vertical */
   .uk-grid-divider.uk-grid-large.uk-grid-stack > .uk-grid-margin,
   .uk-grid-divider.uk-grid-row-large.uk-grid-stack > .uk-grid-margin {
-    margin-top: 96px;
+    margin-top: 80px;
   }
   .uk-grid-divider.uk-grid-large.uk-grid-stack > .uk-grid-margin::before {
-    top: -48px;
-    left: 96px;
+    top: -40px;
+    left: 80px;
   }
   .uk-grid-divider.uk-grid-row-large.uk-grid-stack > .uk-grid-margin::before {
-    top: -48px;
+    top: -40px;
   }
   .uk-grid-divider.uk-grid-column-large.uk-grid-stack > .uk-grid-margin::before {
-    left: 96px;
+    left: 80px;
   }
 }
 /* Match child of a grid cell
@@ -9733,69 +9739,69 @@ iframe[data-uk-cover] {
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-margin-large {
-    margin-bottom: 48px;
+    margin-bottom: 40px;
   }
   * + .uk-margin-large {
-    margin-top: 48px !important;
+    margin-top: 40px !important;
   }
   .uk-margin-large-top {
-    margin-top: 48px !important;
+    margin-top: 40px !important;
   }
   .uk-margin-large-bottom {
-    margin-bottom: 48px !important;
+    margin-bottom: 40px !important;
   }
   .uk-margin-large-left {
-    margin-left: 48px !important;
+    margin-left: 40px !important;
   }
   .uk-margin-large-right {
-    margin-right: 48px !important;
+    margin-right: 40px !important;
   }
 }
 /* XLarge
  ========================================================================== */
 .uk-margin-xlarge {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 * + .uk-margin-xlarge {
-  margin-top: 48px !important;
+  margin-top: 40px !important;
 }
 
 .uk-margin-xlarge-top {
-  margin-top: 48px !important;
+  margin-top: 40px !important;
 }
 
 .uk-margin-xlarge-bottom {
-  margin-bottom: 48px !important;
+  margin-bottom: 40px !important;
 }
 
 .uk-margin-xlarge-left {
-  margin-left: 48px !important;
+  margin-left: 40px !important;
 }
 
 .uk-margin-xlarge-right {
-  margin-right: 48px !important;
+  margin-right: 40px !important;
 }
 
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-margin-xlarge {
-    margin-bottom: 64px;
+    margin-bottom: 48px;
   }
   * + .uk-margin-xlarge {
-    margin-top: 64px !important;
+    margin-top: 48px !important;
   }
   .uk-margin-xlarge-top {
-    margin-top: 64px !important;
+    margin-top: 48px !important;
   }
   .uk-margin-xlarge-bottom {
-    margin-bottom: 64px !important;
+    margin-bottom: 48px !important;
   }
   .uk-margin-xlarge-left {
-    margin-left: 64px !important;
+    margin-left: 48px !important;
   }
   .uk-margin-xlarge-right {
-    margin-right: 64px !important;
+    margin-right: 48px !important;
   }
 }
 /* Auto
@@ -10074,7 +10080,7 @@ iframe[data-uk-cover] {
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-padding-large {
-    padding: 48px;
+    padding: 40px;
   }
 }
 /* Remove

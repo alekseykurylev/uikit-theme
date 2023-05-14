@@ -11,12 +11,13 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/uikit.css" />
-  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/uikit.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
 
-  <script src="../dist/js/uikit.min.js"></script>
-  <script src="../dist/js/uikit-icons-theme.js"></script>
+  <script src="../../dist/js/uikit.min.js"></script>
+  <script src="../../dist/js/uikit-icons-theme.js"></script>
   
   <title>Document</title>
 
@@ -29,7 +30,7 @@
         <div id="offcanvas-usage" uk-offcanvas="overlay: true">
             <div class="uk-offcanvas-bar uk-offcanvas-width-full uk-flex uk-flex-column">
               <div class="uk-offcanvas-header">
-                <a href="/"><img src="img/logo.svg" width="200" height="24" alt="Фабрикант"></a>
+                <a href="/"><img src="../img/logo.svg" width="200" height="24" alt="Фабрикант"></a>
                 <button class="uk-offcanvas-close" type="button" uk-close></button>
               </div>
               <div class="uk-offcanvas-body uk-width-expand" uk-overflow-auto>
@@ -288,7 +289,7 @@
       <div class="uk-container uk-container-expand">
         <div class="uk-flex-middle" uk-grid>
           <div class="uk-width-auto">
-            <a href="/"><img src="img/logo.svg" width="200" height="24" alt="Фабрикант"></a>
+            <a href="/"><img src="../img/logo.svg" width="200" height="24" alt="Фабрикант"></a>
           </div>
           <div class="uk-width-expand">
             <ul class="header-nav uk-flex-middle" uk-grid>
@@ -390,7 +391,51 @@
       </div>
     </div>
   </header>
-  
+  <main>
+    <section class="uk-section">
+      <div class="uk-container uk-container-expand">
+        <div class="uk-flex uk-flex-bottom uk-margin-small-bottom">
+          <h1 class="uk-h2 uk-margin-remove">Поиск по закупкам</h1>
+          <div class="uk-margin-auto-left">123</div>
+        </div>
+        <div class="uk-card uk-card-body uk-card-default uk-card-small">
+          <div class="uk-child-width-auto" uk-grid>
+            <div class="uk-width-expand">123</div>
+            <div>123</div>
+            <div>13</div>
+            <div>123</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="uk-section">
+      <div class="uk-container uk-container-expand">
+        123
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="uk-container uk-container-expand">
+      <div class="uk-child-width-1-4" uk-grid>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+      <div class="uk-child-width-1-4" uk-grid>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+      <div class="uk-child-width-1-4" uk-grid>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+    </div>
+  </footer>
   <script>
     const navbars = document.querySelectorAll('[uk-navbar]');
 
@@ -424,8 +469,6 @@
         const navbarWidth = navbar.offsetWidth;
         let stopWidth = itemMore.offsetWidth;
         let hiddenItems = [];
-
-        console.log(navbarWidth)
 
         items.forEach((item) => {
           if(navbarWidth >= stopWidth + item.offsetWidth) {
